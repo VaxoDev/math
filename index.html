@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="quiz-container">
+        <h1>Math Quiz</h1>
+        <div id="setup-container">
+            <label for="num-questions">Number of Questions:</label>
+            <input type="number" id="num-questions" min="1" max="50" value="10">
+            <button id="start-btn">Start Quiz</button>
+        </div>
+        <div id="question-container" style="display: none;">
+            <div id="question"></div>
+            <input type="text" id="answer" placeholder="Enter your answer">
+            <button id="submit-btn">Submit</button>
+        </div>
+        <div id="quiz-info" style="display: none;">
+            <div id="timer">Time left: <span id="time">15</span>s</div>
+            <div id="remaining">Questions left: <span id="remaining-value">10</span></div>
+            <div id="score">Score: <span id="score-value">0</span></div>
+        </div>
+        <div id="result-container" style="display: none;">
+            <h2>Quiz Completed!</h2>
+            <div id="feedback"></div>
+            <div id="question-review"></div>
+            <button id="restart-btn">Restart Quiz</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
